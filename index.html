@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- background canvas -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio<span class="dot">.</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About Me</a></li>
+            <li><a href="#education" class="nav-item">Education</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content reveal">
+            <span class="badge">Welcome to my portfolio</span>
+            <h1>Hi, I'm <span class="gradient-text">Gyan Magmanlac</span></h1>
+            <p class="typing-container"><span id="typing-text"></span><span class="cursor-blink">|</span></p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="resume.html" class="btn btn-secondary">View Resume / CV <i class="fa-solid fa-file-invoice"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="section">
+        <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+        <div class="about-card glass-card reveal">
+            <div class="about-content">
+                
+                <!-- profile image -->
+                <div class="about-img-container">
+                    <img src="profile.jpg" alt="Gyan Magmanlac" class="about-img">
+                </div>
+
+                <!-- bio text -->
+                <div class="about-text" style="text-align: justify;">
+                    <p style="margin-bottom: 1.5rem;">Hi, I’m Gyan Magmanlac, a student from the University of Batangas. 
+                        One of my interests is exploring technology because, nowadays, 
+                        technology has become an important part of our everyday lives. 
+                        As I continue learning more about technology, I hope to use my 
+                        knowledge responsibly and help spread awareness about its proper 
+                        and beneficial use.</p>
+                        
+                    <p style="margin-bottom: 1.5rem;">Aside from technology, my hobbies include playing sports such as 
+                        volleyball and sepak takraw, as well as playing chess. These activities 
+                        have helped me develop important skills such as teamwork, discipline, 
+                        patience, focus, and strategic thinking.</p>
+                        
+                    <p>My goal is to become a skilled and responsible IT professional who can use 
+                        technology to solve problems, help others, and contribute something meaningful 
+                        to society. I know that there is still a lot for me to learn, but I am willing 
+                        to take on new challenges, gain experience, and continue growing both personally 
+                        and professionally.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- education section -->
+    <section id="education" class="section">
+        <h2 class="section-title reveal">Educational <span class="gradient-text">Journey</span></h2>
+        <div class="timeline">
+            
+            <!-- college -->
+            <a href="college.html" class="timeline-item reveal text-link">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-tag">College</span>
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p class="institution"><i class="fa-solid fa-building-columns"></i> University of Batangas</p>
+                    <p class="date"><i class="fa-solid fa-calendar"></i> 2025 - Present</p>
+                    <span class="expand-btn">View Full Details <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- senior high school -->
+            <a href="shs.html" class="timeline-item reveal text-link">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-tag">Senior High School</span>
+                    <h3>Science, Technology, Engineering, and Mathematics (STEM) Graduate</h3>
+                    <p class="institution"><i class="fa-solid fa-school"></i> Holy Family Academy</p>
+                    <p class="date"><i class="fa-solid fa-calendar"></i> 2023 - 2025</p>
+                    <span class="expand-btn">View Full Details <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- junior high school -->
+            <a href="highschool.html" class="timeline-item reveal text-link">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-tag">High School</span>
+                    <h3>Junior High School Graduate</h3>
+                    <p class="institution"><i class="fa-solid fa-school"></i> Holy Family Academy</p>
+                    <p class="date"><i class="fa-solid fa-calendar"></i> 2019 - 2023</p>
+                    <span class="expand-btn">View Full Details <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- elementary -->
+            <a href="elementary.html" class="timeline-item reveal text-link">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-tag">Elementary</span>
+                    <h3>Elementary School Graduate</h3>
+                    <p class="institution"><i class="fa-solid fa-school"></i> Tangob Elementary School</p>
+                    <p class="date"><i class="fa-solid fa-calendar"></i> 2013 - 2019</p>
+                    <span class="expand-btn">View Full Details <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills" class="section">
+        <h2 class="section-title reveal">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="skills-grid reveal">
+            <div class="skill-card glass-card">
+                <i class="fa-solid fa-code skill-icon"></i>
+                <h3>C++</h3>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fa-solid fa-c skill-icon"></i>
+                <h3>C</h3>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fa-brands fa-html5 skill-icon"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fa-brands fa-java skill-icon"></i>
+                <h3>Java</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects" class="section">
+        <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="project-grid">
+            
+            <!-- shoe website -->
+            <div class="project-card glass-card reveal">
+                <div class="project-info">
+                    <h3>E-Commerce Shoe Store</h3>
+                    <p>An interactive footwear web application featuring side navigation, product swappers, dynamic cart calculations, and persistent local storage built during my first semester in college.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- food ordering system -->
+            <div class="project-card glass-card reveal">
+                <div class="project-info">
+                    <h3>Online Food Ordering System</h3>
+                    <p>A console-based software application created in C language during my second semester to manage digital food ordering, menu selection, and transaction processing.</p>
+                    <div class="project-tags">
+                        <span>C Language</span>
+                        <span>Console Utility</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- aquaponics project -->
+            <div class="project-card glass-card reveal">
+                <div class="project-info">
+                    <h3>Algua-ponics System</h3>
+                    <p>An automated aquaponics capstone project with air purification. Programmed the main Arduino logic to control water intake, timed absorption, soil-less bamboo planting cycles, and pump cooldown protection.</p>
+                    <div class="project-tags">
+                        <span>Arduino</span>
+                        <span>C++</span>
+                        <span>Embedded Systems</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- recipe site -->
+            <div class="project-card glass-card reveal">
+                <div class="project-info">
+                    <h3>Interactive Recipe Website</h3>
+                    <p>A media-rich walkthrough web application featuring clean structural layouts, styled video embeds, and responsive culinary content sections using web standards and JavaScript interactivity.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- contact section -->
+<section id="contact" class="section">
+    <h2 class="section-title gradient-text reveal">Contact Informations</h2>
+    <div class="contact-card glass-card reveal">
+        <div class="contact-info-list">
+
+            <!-- email address -->
+            <div class="contact-item" onclick="navigator.clipboard.writeText('magmanlacgyan73@gmail.com'); alert('Email copied to clipboard!');" style="cursor: pointer;">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">magmanlacgyan73@gmail.com</span>
+                </div>
+            </div>
+
+            <!-- instagram profile -->
+            <a href="https://www.instagram.com/gnmgnac/" target="_blank" rel="noopener noreferrer" class="contact-item contact-item-link">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">gnmgnac</span>
+                </div>
+            </a>
+
+            <!-- facebook profile -->
+            <a href="https://www.facebook.com/gyan.magmanlac.7" target="_blank" rel="noopener noreferrer" class="contact-item contact-item-link">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">Facebook</span>
+                    <span class="contact-value">Gyan Magmanlac</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy;12/09/2026 Project in PT101 published by Gyan Magmanlac</p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="java.js"></script>
+</body>
+</html>
